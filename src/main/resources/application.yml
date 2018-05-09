@@ -1,0 +1,14 @@
+application:
+   elasticsearch:
+      host: localhost
+      port: 9300
+      cluster-name: elasticsearch
+      users-index: users
+      user-document-type: user
+      receipes-mapping-index: receipes
+      receipe-mapping-document-type: receipe-mapping
+      number-of-replicas: 1
+      number-of-shards: 5
+      cluster-sniff: false
+   recommendations-file: /home/niko_strongioglou/Desktop/code/hackathon/recommender/src/main/resources/users.csv
+   recommendation-engine-url: http://localhost:8080/recommender/recommend
